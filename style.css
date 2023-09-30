@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: pink;
+    position: relative;
+}
+
+.quote-box {
+    width: 40%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 2rem;
+
+}
+
+.quote {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    padding-bottom: 0.3rem;
+    flex-wrap: wrap;
+
+}
+
+.quote-content {
+    border-bottom: 2px solid pink;
+
+}
+
+p {
+    font-size: 1.2rem;
+    font-family: 'Dancing Script', cursive;
+}
+
+.author-name {
+    text-align: right;
+    font-family: 'Dancing Script';
+    font-weight: bolder;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.generate-quote {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sound {
+
+    font-size: 1.2rem;
+    display: flex;
+    gap: 1rem;
+}
+
+#volume:hover,
+#copy:hover {
+    color: pink;
+
+}
+
+.copy-alert {
+    background-color: rgb(248, 197, 205);
+    color: white;
+    padding: 0.2rem;
+    border-radius: 5px;
+    font-size: 1px;
+    visibility: hidden;
+    transition: 1s ease-in-out;
+}
+
+.gen-btn {
+    border: none;
+    outline: none;
+    background-color: pink;
+    color: white;
+    padding: 0.5rem;
+    font-weight: bolder;
+    border-radius: 50px;
+}
+
+.gen-btn:hover {
+    background-color: rgb(248, 168, 181);
+}
+
+@media (max-width:800px){
+ 
+    .quote-box {
+        width: 70%;
+       
+    }
+    
+}
